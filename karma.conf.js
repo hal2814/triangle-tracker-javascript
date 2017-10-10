@@ -12,11 +12,15 @@ module.exports = function(config) {
       'js/*.js': [ 'browserify'],
       'spec/*.js': ['browserify'],
     },
+    browsers: ['Chrome', 'Firefox', 'Safari', 'FirefoxDeveloper', 'FirefoxAurora', 'FirefoxNightly'],
+
     plugins: [
       'karma-jquery',
       'karma-browserify',
       'karma-jasmine',
       'karma-chrome-launcher',
+      'karma-firefox-launcher',
+      'karma-safari-launcher',
       'karma-jasmine-html-reporter'
     ],
 

@@ -1,7 +1,7 @@
 var Triangle = require('./../js/triangle.js').triangleModule;
 
 //warning! Remember to install karma globally!
-
+//to install istanbul with jasmine: npm install --save istanbul jasmine-node
 describe('Triangle', function() {
 
   beforeEach(function() {
