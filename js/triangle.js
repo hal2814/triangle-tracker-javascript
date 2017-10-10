@@ -27,17 +27,20 @@ Triangle.prototype.scalene = function () {
 
 //checks if it is a triangle
 Triangle.prototype.isTriangle = function () {
-  if ((this.side1 + this.side2 > this.side3) && (this.side2 + this.side3 > this.side1) && (this.side3 + this.side1 > this.side2)) {
-    if (this.isosceles()) {
-      return 3;
-    }
-    else if (this.equilateral()) {
+  if (((this.side1 + this.side2) <= this.side3) || ((this.side2 + this.side3) <= this.side1) || ((this.side3 + this.side1) <= this.side2)) {
+    return 0;
+  }else {
+    if (this.equilateral()) {
       return 2;
+    }
+    else if (this.isosceles()) {
+      return 3;
     }
     else if (this.scalene()) {
       return 1;
     }
-  }else {
-    return 0;
   }
 };
+
+
+exports.triangleModule = Triangle;
