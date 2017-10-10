@@ -55,16 +55,16 @@ $(document).ready(function() {
     var simpleTriangle = new Triangle(side1,side2,side3);
     var state = simpleTriangle.isTriangle();
     if(state === 3) {
-      $('#solution').text("<h3>This is an isosceles triangle</h3>");
+      $('#solution').text("This is an isosceles triangle");
     }
     else if (state === 2) {
-      $('#solution').text("<h3>This is an equilateral triangle</h3>");
+      $('#solution').text("This is an equilateral triangle");
     }
     else if (state === 1) {
-      $('#solution').text("<h3>This is an scalene triangle</h3>");
+      $('#solution').text("This is an scalene triangle");
     }
     else {
-      $('#solution').text("<h3>This is NOT a triangle!!</h3>");
+      $('#solution').text("This is NOT a triangle!!");
     }
     // $('#solution').append("<li>" + element + "</li>");
   });
