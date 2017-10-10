@@ -1,0 +1,14 @@
+{
+  "name": "triangle-tracker",
+  "description": "tells you which triangle you have.",
+  "main": "gulpfile.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
