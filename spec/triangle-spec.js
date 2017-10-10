@@ -1,5 +1,7 @@
 var Triangle = require('./../js/triangle.js').triangleModule;
 
+//warning! Remember to install karma globally!
+
 describe('Triangle', function() {
 
   beforeEach(function() {
